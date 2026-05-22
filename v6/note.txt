@@ -1,0 +1,13 @@
+改进：
+1、分离GUI、PathFinder和主程序Intelligence Scissors
+2、在Preproc中添加 Gaussian Blur，效果一般
+3、在myGUI中添加 snapToEdge，可以吸附至边缘，但是寻路不贴合边缘
+
+可以更新的地方：
+1、引入方向性 Cost（鼓励沿边缘）：类似将cos(θ_edge - θ_move)作为权重因子。其中θ_edge可用Preproc中getGradOri得到梯度方向，再取垂直得到。
+
+2、添加 角度平滑项（鼓励小角度变化）：比较θ_current 和从parent node走来的方向θ_prev，角度越大，惩罚越高。
+
+3、计算边缘时可以尝试添加非极大值抑制：
+	Slide a window of size 𝑘 over the image.
+	At each position, if the pixel at the center is the maximum value within the window, label it as positive (retain it), else label it as negative (suppress it).
