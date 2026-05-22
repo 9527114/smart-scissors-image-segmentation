@@ -1,0 +1,1 @@
+# smart-scissors-image-segmentation
