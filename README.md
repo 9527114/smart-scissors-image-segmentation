@@ -120,6 +120,8 @@ java -cp out IntelligentScissorsGUI
 
 ## 实现效果
 <img width="275" height="279" alt="image" src="https://github.com/user-attachments/assets/5cc26e6f-fb2b-4c95-9040-e7f3ffe692b0" />
+<img width="332" height="305" alt="image" src="https://github.com/user-attachments/assets/73648814-92ed-428a-b612-774b60babff8" />
+
 
 
 ## 核心亮点
